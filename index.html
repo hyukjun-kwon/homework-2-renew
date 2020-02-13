@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font: Lacquer -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lacquer&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d04de37ee9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Paul Kwon</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand"><b>Paul Kwon</b></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-bar mr-auto"></div>
+        <button
+          class="nav-item nav-button btn btn-outline-dark"
+          data-page="profile"
+        >
+          Profile
+        </button>
+        <button
+          class="nav-item nav-button btn btn-outline-dark ml-2"
+          data-page="portfolio"
+        >
+          Portfolio
+        </button>
+        <button
+          class="nav-item nav-button btn btn-outline-dark ml-2"
+          data-page="contact"
+        >
+          Contact
+        </button>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <!-- Profile Page -->
+      <div id="profile" class="container">
+        <div class="row mt-3">
+          <div class="offset-md-2 col-md-8 bg-light p-5">
+            <div class="row">
+              <div class="col-xs-12 col-md-4">
+                <img
+                  src="img/default-avatar.png"
+                  alt="default avatar icon"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-xs-12 col-md-8">
+                <h1>Paul Kwon</h1>
+                <p>
+                  <b>About: </b>Currently attending UCLA Jan-2020 Web Dev.
+                  Bootcamp, as a full-stack/full time student.
+                </p>
+                <!-- Skills: More can be added; consider Progress bars -->
+                <p>
+                  <b>Skills: </b>
+                  <span class="badge badge-secondary">HTML</span>
+                  <span class="badge badge-primary">CSS</span>
+                  <span class="badge badge-primary">Bootstrap</span>
+                  <span class="badge badge-info">Semantic UI</span>
+                  <span class="badge badge-warning">Javascript</span>
+                  <span class="badge badge-warning">JQuery</span>
+                  <span class="badge badge-success">Node.js</span>
+                </p>
+                <!-- Social: Indeed, LinkedIn, etc. can be added later -->
+                <p>
+                  <b>Social:</b>
+                  <a
+                    href="https://github.com/hyukjun-kwon"
+                    target="_blank"
+                    class="badge badge-dark"
+                  >
+                    <i class="fab fa-github fa-1x mr-1"></i>Github
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of Profile Page -->
+
+      <!-- Portfolio Page -->
+      <div id="portfolio" class="container">
+        <div class="row mt-3">
+          <div class="offset-md-2 col-md-8">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#imbibo"><code>imbibo</code></a></li>
+                <li class="breadcrumb-item"><a href="#"><code>project 2</code></a></li>
+                <li class="breadcrumb-item"><a href="#"><code>project 3</code></a></li>
+              </ol>
+            </nav>
+          </div>
+          <div id="imbibo" class="offset-md-2 col-md-8 bg-light p-3">
+            <header>
+              <div class="overlay"></div>
+              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="img/imbibo_demo.mp4" type="video/mp4">
+              </video>
+              <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                  <div class="w-100 text-white">
+                    <h1 class="display-3">imbibo</h1>
+                    <p class="lead mb-0">comprehensive cocktail database</p>
+                  </div>
+                </div>
+              </div>
+            </header>
+            
+            <section class="mt-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 mx-auto">
+                    <p>If you are looking to looking for a rare cocktail find, or looking for a recipe to make your favorite cocktail at home, look no furthre than <code><b>imbibo</b></code></p>
+                  
+                    <p>Search the <code>ingredient</code> or <code>cocktail name</code>, to find a list of cocktail that contains the ingredient, or a detailed recipe with ingredients and instruction of the cocktail.</p>
+
+                    <p>Implemented with <span style="color: teal">Semantic UI</span>: fully responsive for your phone, tablet, and desktop, so that you can take it and use it anywhere.</p>
+
+                    <p>Implemented with <span style="color: red"><i class="fab fa-yelp"></i>Yelp</span>: search for bars nearby, with yelp rating, contact information, and the distance.</p>
+                    <p>Project repository at <a href="https://github.com/hyukjun-kwon/imbibo">Github: imbibo</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div> <!-- End of Portfolio Page -->
+
+
+
+      <!-- Contact Page -->
+      <div id="contact" class="container">
+        <div class="row mt-3">
+          <div class="offset-md-2 col-md-8 bg-light p-5">
+            <div class="text-primary pt-3">
+              <h2>Contact Me</h2>
+            </div>
+
+            <hr />
+
+            <form>
+              <div class="form-group">
+                <label for="contact-name">Your name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Your email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message:</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of Contact Page -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container text-center">
+        <span class="text-muted"
+          >UCLA BOOTCAMP FULLSTACK FLEX FULLTIME - JAN 2020 CLASS</span
+        >
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Javascript file -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
