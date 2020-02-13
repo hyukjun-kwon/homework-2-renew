@@ -1,25 +1,22 @@
 $(document).ready(function() {
+  $("#portfolio").hide();
   $("#contact").hide();
-  $("#profile").hide();
 
-
-
-
-
-
-  
   // Navbar Buttons: Hover Effects
-  $(".nav-button").hover(function(event) {
-    // handler-in
-    $(this).animate({width: "+=42px"}, "fast")
-  },function(event){
-    // handler-out
-    $(this).animate({width: "-=42px"}, "fast")
-  }); // End of Navbar Buttons: Hover Effects
+  $(".nav-button").hover(
+    function(event) {
+      // handler-in
+      $(this).animate({ width: "+=42px" }, "fast");
+    },
+    function(event) {
+      // handler-out
+      $(this).animate({ width: "-=42px" }, "fast");
+    }
+  ); // End of Navbar Buttons: Hover Effects
 
   // Navbar Buttons: Click Events
   $(".nav-button").on("click", function(event) {
-    switch($(this).attr("data-page")) {
+    switch ($(this).attr("data-page")) {
       case "profile":
         $("#profile").show();
         $("#portfolio").hide();
@@ -37,5 +34,4 @@ $(document).ready(function() {
         break;
     }
   }); // End of Navbar Buttons: Click Events
-
 }); // End of $(document).ready()
